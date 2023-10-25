@@ -15,8 +15,13 @@ def encode(input_str):
 
     return new_str
 
+def decode(password):
+    decoded_password = ""
+    for i in password:
+        new_digit = str((int(i) - 3)%10)
+        decoded_password += new_digit
+    return decoded_password
 
-#add decode function here, decode fucntion written, tested, and then removed for partner to add
 
 
 def get_menu_option():
